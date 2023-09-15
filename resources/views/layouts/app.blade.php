@@ -23,7 +23,8 @@
     <div class="pageWrapper">
         @include('layouts.menu')
         @if (URL::current() == route('welcome'))
-            @include('layouts.slider')
+            {{-- @include('layouts.slider') --}}
+            @include('layouts.slider.nova_slider')
         @endif
         @yield('content')
 
@@ -57,6 +58,38 @@
     <script src="{{ asset('assets/js/swiper.min.js') }}"></script>
     <script src="{{ asset('assets/js/owl.js') }}"></script>
     <script src="{{ asset('assets/js/script.js') }}"></script>
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ asset('nova/jquery.nivo.slider.js') }}"></script>
+
+
+    <script type="text/javascript">
+        $(window).load(function() {
+            $('#Novaslider').nivoSlider({
+                effect: 'random',
+                slices: 15,
+                boxCols: 8,
+                boxRows: 4,
+                animSpeed: 500,
+                pauseTime: 3000,
+                startSlide: 0,
+                directionNav: true,
+                controlNav: true,
+                controlNavThumbs: false,
+                pauseOnHover: true,
+                manualAdvance: false,
+                prevText: 'Prev',
+                nextText: 'Next',
+                randomStart: false,
+                beforeChange: function() {},
+                afterChange: function() {},
+                slideshowEnd: function() {},
+                lastSlide: function() {},
+                afterLoad: function() {}
+            });
+        });
+    </script>
 </body>
 
 </html>
