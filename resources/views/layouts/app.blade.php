@@ -26,6 +26,7 @@
             {{-- @include('layouts.slider') --}}
             @include('layouts.slider.nova_slider')
         @endif
+
         @yield('content')
 
         @include('layouts.footer')
@@ -62,7 +63,10 @@
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript" src="{{ asset('nova/jquery.nivo.slider.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('vendor/jsvalidation/js/jsvalidation.js') }}"></script>
 
+
+    @yield('script')
 
     <script type="text/javascript">
         $(window).load(function() {

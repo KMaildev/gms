@@ -100,7 +100,7 @@
                                 <li><a href="{{ route('md.index') }}">MD INSIGHTS</a></li>
                                 <li><a href="{{ route('team.index') }}">Our TEAM MEMBERS</a></li>
                                 <li><a href="#">Submit Cv</a></li>
-                                <li><a href="{{route('contact.index')}}">HEAD OFFICE</a></li>
+                                <li><a href="{{ route('contact.index') }}">HEAD OFFICE</a></li>
                                 <li><a href="#" hidden>BRANCH OFFICE</a></li>
                             </ul>
                         </li>
@@ -123,24 +123,30 @@
                             </a>
                         </li>
 
-                        <li>
-                            <a href="{{ route('gallery.index') }}" style="font-weight:bold; color:#0a5cb5">
+                        <li class="dropdown">
+                            <a href="javascript::void(0)" style="font-weight:bold; color:#0a5cb5">
                                 MEDIA GALLERY
                             </a>
+                            <ul>
+                                @foreach ($categories as $category)
+                                    <li>
+                                        <a href="{{ route('gallery.show', $category->id) }}">
+                                            {{ $category->title ?? '' }}
+                                        </a>
+                                    </li>
+                                @endforeach
+                            </ul>
                         </li>
 
                     </ul>
                 </nav>
 
-                {{-- <div class="outer-box">                        
+                {{-- <div class="outer-box">
                     <a href="tel:+92(8800)9806" class="info-btn">
                         <img class="icon" src="{{asset('assets/images/icons/icon-phone.png')}}" alt="">
-                        <small class="title">Call Anytime</small> 
+                        <small class="title">Call Anytime</small>
                         <strong class="text">+ 92 ( 8800 ) 86300</strong>
                     </a>
-
-                   
-
                     <a href="page-contact.html" class="theme-btn btn-style-one"><span class="btn-title">Book Consultation</span></a>
 
                     <!-- Mobile Nav toggler -->
@@ -216,7 +222,8 @@
 
                 <div class="logo">
                     <a href="javascript::void(0)" title="">
-                        <img src="{{ asset('data/weblogo.png') }}" alt="" title="" style="width: 250px;">
+                        <img src="{{ asset('data/weblogo.png') }}" alt="" title=""
+                            style="width: 250px;">
                     </a>
                 </div>
 

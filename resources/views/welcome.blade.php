@@ -54,7 +54,7 @@
                 </div>
             </div>
 
-            <div class="bottom-text"> RIGHT PEOPLE AT THE RIGHT PLACE IN THE RIGHT TIME <a href="page-service.html"
+            <div class="bottom-text"> RIGHT PEOPLE AT THE RIGHT PLACE IN THE RIGHT TIME <a href="#"
                     class="theme-btn btn-style-two">License Certificate</a></div>
         </div>
     </section>
@@ -319,7 +319,7 @@
                             <h2>Countries we support <br>for the <span class="color3">candidates</span></h2>
                             <div class="text">We guide you to the right path .</div>
                         </div>
-                        <a href="page-country.html" class="theme-btn btn-style-one">Explore More</a>
+                        <a href="#" class="theme-btn btn-style-one">Explore More</a>
                     </div>
                 </div>
 
@@ -393,7 +393,7 @@
                             </div>
                         </div>
 
-                        
+
                     </div>
                 </div>
             </div>
@@ -413,10 +413,8 @@
 							<li><i class="fa fa-check-circle"></i> Fulfilled over 12,000 recruitment projects</li>
 							<li><i class="fa fa-check-circle"></i> Worked with over 2000+ global clients</li>
 							<li><i class="fa fa-check-circle"></i> Developed a Presence in 25+ countries</li>
-							
 						</ul>
-						<a href="page-contact.html" class="theme-btn btn-style-four"><span class="btn-title">Book Consultation</span></a>
-
+						<a href="#" class="theme-btn btn-style-four"><span class="btn-title">Book Consultation</span></a>
 						<figure class="badge"><img src="images/resource/badge.png" alt=""></figure>
 					</div>
 				</div>
@@ -481,8 +479,8 @@
 						</div>
 					</div>
 				</div>
-               
-				
+
+
 			</div>
 		</div>
 	</section>

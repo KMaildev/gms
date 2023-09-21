@@ -1,6 +1,4 @@
 <head>
-    <title>jQuery Nivo Slider Demo</title>
-    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="{{ asset('nova/themes/default/default.css') }}" type="text/css" media="screen" />
     <link rel="stylesheet" href="{{ asset('nova/themes/light/light.css') }}" type="text/css" media="screen" />
     <link rel="stylesheet" href="{{ asset('nova/themes/dark/dark.css') }}" type="text/css" media="screen" />
