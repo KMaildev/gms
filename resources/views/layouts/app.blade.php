@@ -19,6 +19,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 </head>
 
+
+<style>
+    .gradient-border {
+        --border-width: 4px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Lato, sans-serif;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        color: white;
+        background: white;
+        border-radius: var(--border-width);
+        border-radius: 15px 30px;
+
+        &::after {
+            position: absolute;
+            content: "";
+            top: calc(-1 * var(--border-width));
+            left: calc(-1 * var(--border-width));
+            z-index: -1;
+            width: calc(100% + var(--border-width) * 2);
+            height: calc(100% + var(--border-width) * 2);
+            background: linear-gradient(60deg,
+                    hsl(224, 85%, 66%),
+                    hsl(269, 85%, 66%),
+                    hsl(314, 85%, 66%),
+                    hsl(359, 85%, 66%),
+                    hsl(44, 85%, 66%),
+                    hsl(89, 85%, 66%),
+                    hsl(134, 85%, 66%),
+                    hsl(179, 85%, 66%));
+            background-size: 300% 300%;
+            background-position: 0 50%;
+            border-radius: calc(2 * var(--border-width));
+            animation: moveGradient 3s alternate infinite;
+            border-radius: 15px 30px;
+        }
+    }
+
+    @keyframes moveGradient {
+        50% {
+            background-position: 100% 50%;
+        }
+    }
+
+
+
+    /* Font Design  */
+    @keyframes textShine {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        100% {
+            background-position: 100% 50%;
+        }
+    }
+
+    .font-design1 {
+        font-size: clamp(2.8rem, 1.5vw, 3rem);
+        font-weight: bold;
+        margin: 5px;
+        background: linear-gradient(to right,
+                #061E5E 20%,
+                #00affa 30%,
+                #0190cd 70%,
+                #c43477 80%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-fill-color: transparent;
+        background-size: 500% auto;
+        animation: textShine 5s ease-in-out infinite alternate;
+    }
+</style>
+
 <body>
     <div class="pageWrapper">
         @include('layouts.menu')

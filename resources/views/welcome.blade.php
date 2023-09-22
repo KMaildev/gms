@@ -1,72 +1,59 @@
 @extends('layouts.app')
 @section('content')
-    <br>
-    <section class="why-choose-us pt-0 py-5">
-        <div class="bg bg-pattern-1"></div>
+    <section class="contact-section">
+        <div class="outer-box">
+            <div class="auto-container">
+                <div class="row">
 
-        <div class="auto-container">
-            <div class="sec-title text-center">
-                <span class="sub-title">countries you can apply</span>
-                <h2>Few reasons to choose <br>our <span class="color3">company</span></h2>
-            </div>
-
-            <div class="row">
-                <!-- Features Block -->
-                <div class="feature-block col-xl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp">
-                    <div class="inner-box">
-                        <i class="icon flaticon-interview" style="background-color:orange:"></i>
-                        <span class="cat">GSM</span>
-                        <h6 class="title"><a href="">Direct Interviews</a></h6>
+                    <div class="col-lg-4 col-md-4 col-sm-6 py-5">
+                        <img src="{{ asset('data/md.png') }}" alt=""
+                            style="width: 100%; border-radius: 0% 20%;  border: 5px solid #FA8714;">
                     </div>
-                </div>
 
-                <!-- Features Block -->
-                <div class="feature-block col-xl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="300ms">
-                    <div class="inner-box">
-                        <div class="content">
-                            <i class="icon flaticon-low-cost"></i>
-                            <span class="cat">GSM</span>
-                            <h6 class="title"><a href="">Cost Effective</a></h6>
+                    <div class="title-column col-lg-8 col-md-8 col-sm-6 wow fadeInLRight py-5">
+                        <div class="inner-column" style="padding: 0px 0 0px;">
+                            <div class="sec-title">
+                                <span class="sub-title">contact with us</span>
+                                <h2>
+                                    Right Job for right people
+                                    <span class="color3">
+                                        under easy process
+                                    </span>
+                                </h2>
+
+                                <div class="text text-black" style="font-size: 18px;">
+                                    The best service of Golden Sea Myanmar Co., Ltd is, supplying
+                                    Myanmar workers for your business, with confidence.
+                                </div>
+
+
+                                <div class="btn-box py-3">
+                                    <a href="{{ route('contact.index') }}" class="theme-btn btn-style-four">
+                                        <span class="btn-title">
+                                            Contact us with trust
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Features Block -->
-                <div class="feature-block col-xl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="600ms">
-                    <div class="inner-box">
-                        <div class="content">
-                            <i class="icon flaticon-loyalty"></i>
-                            <span class="cat">GSM</span>
-                            <h6 class="title"><a href="">Trusted Customers</a></h6>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Features Block -->
-                <div class="feature-block col-xl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="900ms">
-                    <div class="inner-box">
-                        <div class="content">
-                            <i class="icon flaticon-online-support"></i>
-                            <span class="cat">GSM</span>
-                            <h6 class="title"><a href="">Support Team</a></h6>
-                        </div>
-                    </div>
                 </div>
             </div>
-
-            <div class="bottom-text"> RIGHT PEOPLE AT THE RIGHT PLACE IN THE RIGHT TIME <a href="#"
-                    class="theme-btn btn-style-two">License Certificate</a></div>
         </div>
     </section>
 
 
-    <section class="about-section">
+    <section class="about-section" style="padding: 0px 0 70px;">
         <div class="auto-container">
             <div class="row">
                 <div class="content-column col-xl-6 col-lg-6 col-md-12 col-sm-12 wow fadeInRight" data-wow-delay="600ms">
                     <div class="inner-column">
                         <div class="sec-title">
-                            <span class="sub-title">about the company</span>
+                            <span class="sub-title">
+                                about the company
+                            </span>
 
                             <h2>OVERSEAS MANPOWER RECRUITMENT <span class="color3">COMPANY</span></h2>
                             <h4 style="color:orange; text-shadow:1px 1px 1px;">Golden Sea Myanmar .......</h4>
@@ -94,7 +81,11 @@
                         </div>
 
                         <div class="btm-box">
-                            <a href="" class="theme-btn btn-style-one"><span class="btn-title">Read More</span></a>
+                            <a href="{{ route('contact.index') }}" class="theme-btn btn-style-one">
+                                <span class="btn-title">
+                                    Read More
+                                </span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -132,6 +123,85 @@
             </div>
         </div>
     </section>
+
+
+    <section class="contact-section">
+        <div class="outer-box">
+            <div class="auto-container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-md-6 col-sm-6 py-5 wow ">
+                        <img src="{{ asset('data/country.png') }}" alt="" style="filter: drop-shadow(1px 1px 2px black)">
+                    </div>
+
+                    <div class="title-column col-lg-6 col-md-6 col-sm-6 wow fadeInRight  py-5" data-wow-delay="600ms">
+                        <div class="inner-column" style="padding: 0px 0 0px;">
+                            <div class="sec-title">
+                                <h2 class="font-design1">
+                                    Our Milestone,
+                                    <br> Image and capability
+                                </h2>
+
+                                <div class="text text-black" style="font-size: 18px;">
+                                    In current age, businesses in many parts of the world are
+                                    undergoing reforms to develop, Golden Sea Myanmar Co.,
+                                    Ltd founded in 2004, has a successful reputation in this field
+                                    with over 19 years of experience.
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="team-section" style="padding: 20px 0 80px;">
+        <div class="auto-container">
+            <div class="sec-title text-center">
+                <span class="sub-title">
+                    Legal Documents
+                </span>
+                <h2 style="font-size: 46px;">
+                    Our update licenses,
+                    <br>
+                    <span class="color3">
+                        Approved by Ministry of Labour
+                    </span>
+                </h2>
+            </div>
+
+            <div class="row d-flex justify-content-around">
+
+                <div class="team-block col-lg-5 col-md-6 col-sm-12 wow fadeInUp">
+                    <div class="inner-box" style="box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; padding: 10px;">
+                        <img src="{{ asset('data/1.png') }}" alt=""
+                            style="width: 100%; height: 630px; background-size: cover; object-position: center; object-fit: cover;">
+                        <a href="javascript::void(0)" class="theme-btn btn-style-four" style="width: 100%;">
+                            Overseas Employment Agency Licence
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="team-block col-lg-5 col-md-6 col-sm-12 wow fadeInUp">
+                    <div class="inner-box" style="box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; padding: 10px;">
+                        <img src="{{ asset('data/2.png') }}" alt=""
+                            style="width: 100%; height: 630px; background-size: cover; object-position: center; object-fit: cover;">
+                        <a href="javascript::void(0)" class="theme-btn btn-style-four" style="width: 100%;">
+                            Overseas Employment Agency Licence for Thailand
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
 
     <section class="why-choose-us-two">
         <div class="bg bg-pattern-5"></div>
@@ -213,99 +283,63 @@
     </section>
 
     <br><br>
-    {{-- <section class="features-section-two">
-        <div class="auto-container">
-            <div class="outer-box">
-                <span class="icon-plane"></span>
-                <div class="row">
 
-                    <div class="title-column col-lg-6">
-                        <div class="inner-column">
-                            <div class="sec-title light">
-                                <span class="sub-title">check our faqs</span>
-                                <h2>Looking for best <br>study visa <span class="color3">country</span></h2>
+    <section class="fun-fact-section">
+        <div class="fact-counter">
+            <div class="bg bg-pattern-1"></div>
+            <div class="auto-container">
+                <div class="row">
+                    <!-- Counter block-->
+                    <div class="counter-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp">
+                        <div class="inner">
+                            <div class="content">
+                                <i class="icon far fa-plus"></i>
+                                <div class="count-box"><span class="count-text" data-speed="3000"
+                                        data-stop="20">0</span></div>
+                                <h6 class="counter-title">Experiences</h6>
                             </div>
                         </div>
                     </div>
 
-                    <div class="features-column col-lg-3">
-                        <div class="inner-column">
-                            <ul class="list-style-two">
-                                <li>
-                                    <i class="fa fa-check-circle"></i> Visas
-                                </li>
-                                <li>
-                                    <i class="fa fa-check-circle"></i> Study Visa
-                                </li>
-                                <li>
-                                    <i class="fa fa-check-circle"></i> Country Citizenship
-                                </li>
-                                <li>
-                                    <i class="fa fa-check-circle"></i> Permanent Residence
-                                </li>
-                            </ul>
+                    <!--Counter block-->
+                    <div class="counter-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="300ms">
+                        <div class="inner">
+                            <div class="content">
+                                <i class="icon far fa-plus"></i>
+                                <div class="count-box"><span class="count-text" data-speed="3000"
+                                        data-stop="55000">0</span></div>
+                                <h6 class="counter-title">Happy Candidates</h6>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-3 py-5" style="background-color: white;">
-                        <img src="{{ asset('assets/data/process.gif') }}" alt="" style="width: 100%;">
+                    <!--Counter block-->
+                    <div class="counter-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="600ms">
+                        <div class="inner">
+                            <div class="content">
+                                <i class="icon far fa-plus"></i>
+                                <div class="count-box"><span class="count-text" data-speed="3000"
+                                        data-stop="20">0</span></div>
+                                <h6 class="counter-title">Team Members</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Counter block-->
+                    <div class="counter-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="900ms">
+                        <div class="inner">
+                            <div class="content">
+                                <i class="icon far fa-plus"></i>
+                                <div class="count-box"><span class="count-text" data-speed="3000"
+                                        data-stop="150">0</span></div>
+                                <h6 class="counter-title">Happy Clients</h6>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section> --}}
-	<section class="fun-fact-section">
-		<div class="fact-counter">
-			<div class="bg bg-pattern-1"></div>
-			<div class="auto-container">
-				<div class="row">
-					<!-- Counter block-->
-					<div class="counter-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp">
-						<div class="inner">
-							<div class="content">
-								<i class="icon far fa-plus"></i>
-								<div class="count-box"><span class="count-text" data-speed="3000" data-stop="20">0</span></div>
-								<h6 class="counter-title">Experiences</h6>
-							</div>
-						</div>
-					</div>
-
-					<!--Counter block-->
-					<div class="counter-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="300ms">
-						<div class="inner">
-							<div class="content">
-								<i class="icon far fa-plus"></i>
-								<div class="count-box"><span class="count-text" data-speed="3000" data-stop="55000">0</span></div>
-								<h6 class="counter-title">Happy Candidates</h6>
-							</div>
-						</div>
-					</div>
-
-					<!--Counter block-->
-					<div class="counter-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="600ms">
-						<div class="inner">
-							<div class="content">
-								<i class="icon far fa-plus"></i>
-								<div class="count-box"><span class="count-text" data-speed="3000" data-stop="20">0</span></div>
-								<h6 class="counter-title">Team Members</h6>
-							</div>
-						</div>
-					</div>
-
-					<!--Counter block-->
-					<div class="counter-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="900ms">
-						<div class="inner">
-							<div class="content">
-								<i class="icon far fa-plus"></i>
-								<div class="count-box"><span class="count-text" data-speed="3000" data-stop="150">0</span></div>
-								<h6 class="counter-title">Happy Clients</h6>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+    </section>
 
     <section class="faqs-section pull-up">
         <div class="bg bg-pattern-9"></div>
@@ -399,89 +433,96 @@
             </div>
         </div>
     </section>
+
     <section class="call-to-action">
-		<div class="left-shape"><img src="{{asset('assets/images/resource/plane.png')}}" alt=""></div>
-		<div class="right-shape" style="background-image: url({{asset('assets/data/process.gif')}})" ></div>
-		<div class="auto-container">
-			<div class="row">
-				<div class="title-column col-lg-6">
-					<div class="inner-column">
-						<div class="sec-title light">
-							<h4>Interested in finding out <br>how GSM can support you?</h4>
-						</div>
-						<ul class="list-style-two two-column">
-							<li><i class="fa fa-check-circle"></i> Fulfilled over 12,000 recruitment projects</li>
-							<li><i class="fa fa-check-circle"></i> Worked with over 2000+ global clients</li>
-							<li><i class="fa fa-check-circle"></i> Developed a Presence in 25+ countries</li>
-						</ul>
-						<a href="#" class="theme-btn btn-style-four"><span class="btn-title">Book Consultation</span></a>
-						<figure class="badge"><img src="images/resource/badge.png" alt=""></figure>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+        <div class="left-shape"><img src="{{ asset('assets/images/resource/plane.png') }}" alt=""></div>
+        <div class="right-shape" style="background-image: url({{ asset('assets/data/process.gif') }})"></div>
+        <div class="auto-container">
+            <div class="row">
+                <div class="title-column col-lg-6">
+                    <div class="inner-column">
+                        <div class="sec-title light">
+                            <h4>Interested in finding out <br>how GSM can support you?</h4>
+                        </div>
+                        <ul class="list-style-two two-column">
+                            <li><i class="fa fa-check-circle"></i> Fulfilled over 12,000 recruitment projects</li>
+                            <li><i class="fa fa-check-circle"></i> Worked with over 2000+ global clients</li>
+                            <li><i class="fa fa-check-circle"></i> Developed a Presence in 25+ countries</li>
+                        </ul>
+                        <a href="#" class="theme-btn btn-style-four"><span class="btn-title">Book
+                                Consultation</span></a>
+                        <figure class="badge"><img src="images/resource/badge.png" alt=""></figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="services-section-two pull-down">
-		<div class="bg" style="bottom: 0px;"></div>
-		<div class="auto-container">
-			<div class="sec-title text-center light">
-				<span class="sub-title">Media Gallery</span>
-				<h2 >Our Sending <br> Candidates <span class="color3">Activities</span></h2>
-			</div>
+        <div class="bg" style="bottom: 0px;"></div>
+        <div class="auto-container">
+            <div class="sec-title text-center light">
+                <span class="sub-title">Media Gallery</span>
+                <h2>Our Sending <br> Candidates <span class="color3">Activities</span></h2>
+            </div>
 
-			<div class="row">
-				<!-- Service Block -->
-				<div class="service-block-two col-lg-3 col-md-6 col-sm-12 wow fadeInUp">
-					<div class="inner-box">
-						<div class="image-box">
-							<figure class="image"><a href=""><img src="{{asset('assets/data/de1.jpg')}}" alt=""></a></figure>
-							<i class="icon fa fa-plane"></i>
-						</div>
-						<div class="lower-content">
-							<h6 class="title"><a href="">Sending Candidates</a></h6>
-							<div class="text">Departure</div>
-						</div>
-					</div>
-				</div>
+            <div class="row">
+                <!-- Service Block -->
                 <div class="service-block-two col-lg-3 col-md-6 col-sm-12 wow fadeInUp">
-					<div class="inner-box">
-						<div class="image-box">
-							<figure class="image"><a href=""><img src="{{asset('assets/data/de2.jpg')}}" alt=""></a></figure>
-							<i class="icon fa fa-plane"></i>
-						</div>
-						<div class="lower-content">
-							<h6 class="title"><a href="">Sending Candidates</a></h6>
-							<div class="text">Departure</div>
-						</div>
-					</div>
-				</div>
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure class="image"><a href=""><img src="{{ asset('assets/data/de1.jpg') }}"
+                                        alt=""></a></figure>
+                            <i class="icon fa fa-plane"></i>
+                        </div>
+                        <div class="lower-content">
+                            <h6 class="title"><a href="">Sending Candidates</a></h6>
+                            <div class="text">Departure</div>
+                        </div>
+                    </div>
+                </div>
                 <div class="service-block-two col-lg-3 col-md-6 col-sm-12 wow fadeInUp">
-					<div class="inner-box">
-						<div class="image-box">
-							<figure class="image"><a href=""><img src="{{asset('assets/data/de3.jpg')}}" alt=""></a></figure>
-							<i class="icon fa fa-plane"></i>
-						</div>
-						<div class="lower-content">
-							<h6 class="title"><a href="">Sending Candidates</a></h6>
-							<div class="text">Departure</div>
-						</div>
-					</div>
-				</div>
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure class="image"><a href=""><img src="{{ asset('assets/data/de2.jpg') }}"
+                                        alt=""></a></figure>
+                            <i class="icon fa fa-plane"></i>
+                        </div>
+                        <div class="lower-content">
+                            <h6 class="title"><a href="">Sending Candidates</a></h6>
+                            <div class="text">Departure</div>
+                        </div>
+                    </div>
+                </div>
                 <div class="service-block-two col-lg-3 col-md-6 col-sm-12 wow fadeInUp">
-					<div class="inner-box">
-						<div class="image-box">
-							<figure class="image"><a href=""><img src="{{asset('assets/data/de4.jpg')}}" alt=""></a></figure>
-							<i class="icon fa fa-plane"></i>
-						</div>
-						<div class="lower-content">
-							<h6 class="title"><a href="">Sending Candidates</a></h6>
-							<div class="text">Departure</div>
-						</div>
-					</div>
-				</div>
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure class="image"><a href=""><img src="{{ asset('assets/data/de3.jpg') }}"
+                                        alt=""></a></figure>
+                            <i class="icon fa fa-plane"></i>
+                        </div>
+                        <div class="lower-content">
+                            <h6 class="title"><a href="">Sending Candidates</a></h6>
+                            <div class="text">Departure</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-block-two col-lg-3 col-md-6 col-sm-12 wow fadeInUp">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure class="image"><a href=""><img src="{{ asset('assets/data/de4.jpg') }}"
+                                        alt=""></a></figure>
+                            <i class="icon fa fa-plane"></i>
+                        </div>
+                        <div class="lower-content">
+                            <h6 class="title"><a href="">Sending Candidates</a></h6>
+                            <div class="text">Departure</div>
+                        </div>
+                    </div>
+                </div>
 
 
-			</div>
-		</div>
-	</section>
+            </div>
+        </div>
+    </section>
 @endsection

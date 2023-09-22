@@ -5,7 +5,6 @@
     <img src="{{ asset('assets/data/gallery_banner.png') }}" alt="" style="width: 100%;">
 
 
-
     <section class="news-section">
         <div class="auto-container">
             <div class="row">
